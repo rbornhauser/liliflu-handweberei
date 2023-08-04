@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain/bsb.css" />
     <title>Liliflu Handweberei</title>
     <style>
         section {
@@ -15,24 +17,31 @@
 
 
 
-<body>
+<body class="bg-box">
+
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md fixed-top navbar-light">
+    <nav class="navbar navbar-expand-md fixed-top bg-logo">
         <div class="container-xxl">
+            <!-- brand
             <a href="#intro" class="navbar-brand">
-                <span class="fw-bold text-secondary">Liliflu Webwerkstatt
+                <span class="fw-bold text-secondary">Liliflu Handweberei
                 </span>
             </a>
+            -->
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- navbar links -->
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">PROJEKTE</a>
+                        <a href="#intro" aria-current="page" class="nav-link active">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">WEBWERKE</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">ABOUT</a>
@@ -45,82 +54,201 @@
         </div>
     </nav>
 
-    <div data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
-        tabindex="0">
-        <!-- intro -->
-        <section id="intro">
-            <div class="container-lg">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-5 text-center text-md-start">
-                        <h1>
-                            <div class="display-2">Black-Belt</div>
-                            <div class="display-5 text-muted">your coding skills</div>
-                        </h1>
-                        <p class="lead my-4 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                        <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
-                    </div>
-                    <div class="col-md-5 text-center d-none d-md-block">
-                        <img class="img-fluid" src="assets\box.jpeg" alt="liliflu-box">
-                    </div>
+
+    <!-- intro -->
+    <section id="intro" class="bg-logo">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <img class="img-fluid" src="assets\logo-big.png" alt="liliflu-logo">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- projects -->
+
+    <section id="projects" class="bg-box py-5 py-xl-8">
+        <div class="container mb-5 mb-md-6">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6 text-center">
+                    <h2 class="h1 mb-3">WEBWERKE</h2>
+                    <p class="lead text-muted">Hier kannst du deine Projekte präsentieren.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container overflow-hidden">
+            <div class="row gy-2 g-md-2 g-xl-3 bsb-project-2-grid">
+                <div class="col-12 col-md-4 bsb-project-2-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="assets\webwerke\img1.jpeg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Teppich</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Beschreibung</div>
+                        </figcaption>
+                    </figure>
                 </div>
 
+                <div class="col-12 col-md-4 bsb-project-2-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                src="assets\webwerke\kissen.jpeg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInUp">Kissen</h3>
+                            <div class="text-white bsb-hover-fadeInDown">Beschreibung</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4 bsb-project-2-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale-up bsb-hover-scale" loading="lazy"
+                                src="assets\webwerke\multiple.jpg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInLeft">Was isch das??</h3>
+                            <div class="text-white bsb-hover-fadeInRight">Beschreibung</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4 bsb-project-2-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                src="assets\webwerke\muster.jpeg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInUp">Webmuster</h3>
+                            <div class="text-white bsb-hover-fadeInDown">Beschreibung</div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-12 col-md-4 bsb-project-2-item">
+                    <figure class="rounded rounded-3 overflow-hidden bsb-hover-overlay m-0">
+                        <a href="#!">
+                            <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                src="assets\webwerke\tisch.jpeg" alt="">
+                        </a>
+                        <figcaption>
+                            <h3 class="text-white bsb-hover-fadeInUp">Tischläufer</h3>
+                            <div class="text-white bsb-hover-fadeInDown">Beschreibung</div>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+        </div>
+    </section>
 
-        </section>
 
-        <!-- projects -->
-        <section id="projects" class="bg-light mt-5">
+
+    <!-- about -->
+    <section class="bg-box">
+
+    </section>
+
+    <section id="about" class="bg-box py-5 py-xl-8">
+        <div class="container">
             <div class="container-lg">
                 <div class="text-center">
-                    <h2>Projekte</h2>
-                    <p class="lead text-muted">Lorem ipsum dolor sit.</p>
+                    <h2 class="h1 mb-3">Über die Handweberei</h2>
+                    <p class="lead text-muted">Wieso du das machst etc...</p>
                 </div>
-                <div class="row my-5 align-items-center justify-content-center">
-                    <div class="col-8 col-lg-4 col-xl-3">
-                        <div class="card border-0">
-                            <div class="card-body text-center py-4">
-                                <h4 class="card-title">Kissen</h4>
-                                <p class="lead card-subtitle">wunderbar</p>
-                                <p class="display-5 my-4 text-primary fw-bold">CHF 500</p>
-                                <p class="card-text mx-5 text-muted d-noned-lg-block">Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
-                            </div>
-                        </div>
+
+            </div>
+            <div class="row gy-5 gy-lg-0 gx-lg-6 gx-xxl-8 align-items-lg-center">
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid rounded" loading="lazy" src="assets\box-transparent.png" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+
+                    <p class="lead fs-4 text-secondaryX mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dignissimos dolore dolorum at cupiditate esse deserunt minima iusto a harum, mollitia sit
+                        similique cum, placeat repellendus cumque eius atque recusandae quaerat pariatur labore! Ipsum
+                        nesciunt, explicabo labore nobis quam quaerat cupiditate.</p>
+
+                    <div>
+                        <p class="fs-5 m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
                     </div>
-                    <div class="col-9 col-lg-4">
-                        <div class="card border-primary border-2">
-                            <div class="card-header text-center text-primary">Most popular</div>
-                            <div class="card-body text-center py-4">
-                                <h4 class="card-title">Kissen</h4>
-                                <p class="lead card-subtitle">wunderbar</p>
-                                <p class="display-5 my-4 text-primary fw-bold">CHF 500</p>
-                                <p class="card-text mx-5 text-muted d-noned-lg-block">Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
-                            </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact" class="bg-logo">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Kontakt</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, delectus?</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="dein.name@mail.ch">
                         </div>
-                    </div>
+
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="Vorname Nachname">
+                        </div>
+
+
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-left-dots"></i>
+                            </span>
+                            <input type="text" class="form-control" id="Betreff" placeholder="Betreff">
+                        </div>
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control" style="height: 140px;"></textarea>
+                            <label for="query" class="form-label">Deine Nachricht ...</label>
+                        </div>
+
+                        <div class="mb-4 text-end">
+                            <button type="submit" class="btn btn-secondary ">Senden</button>
+                        </div>
+
+
+
+                    </form>
                 </div>
             </div>
-        </section>
-
-        <!-- about -->
-        <section id="about">
-
-        </section>
+        </div>
+    </section>
 
 
-        <!-- contact -->
-        <section id="contact">
+    <!-- Javascript Files: Vendors -->
+    <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-packery@2.0.1/packery-mode.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
 
-        </section>
-    </div>
+    <!-- Javascript Files: Controllers -->
+    <script src="https://unpkg.com/bs-brain/components/projects/project-2/assets/controller/project-2.js"></script>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
 
