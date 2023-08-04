@@ -1,0 +1,14 @@
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "logo": #D3CCB2,
+    "box": #E7E6E1
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,22 @@
+{
+  "name": "liliflu-handweberei",
+  "version": "1.0.0",
+  "description": "one pager with bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbornhauser/liliflu-handweberei.git"
+  },
+  "author": "Reto Bornhauser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbornhauser/liliflu-handweberei/issues"
+  },
+  "homepage": "https://github.com/rbornhauser/liliflu-handweberei#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
